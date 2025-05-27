@@ -21,28 +21,28 @@ Request body (JSON):
   "password": "string"
 }
 
-`POST /api/book`    for adding a book
+`POST /api/books`    for adding a book
 {
   "title": "string",
   "author": "string",
   "genre": "string"
 }
 
-`POST /api/book/:id/reviews`   for giving review to a book
+`POST /api/books/:id/reviews`   for giving review to a book
 {
   "rating": number (1-5),
   "comment": "string"
 }
 
-`PUT /api/book/:id/reviews`    for updating specific review
+`PUT /api/books/:id/reviews`    for updating specific review
 {
   "rating": number (1-5),
   "comment": "string"
 }
 
-`GET /api/book`    for displaying all the books
+`GET /api/books`    for displaying all the books
 
-`DELETE /api/book/:id/reviews`   for deleting any review
+`DELETE /api/books/:id/reviews`   for deleting any review
 
 MongoDB database has been used
 Schema Design -
